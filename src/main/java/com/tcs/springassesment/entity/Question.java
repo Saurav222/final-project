@@ -21,10 +21,13 @@ public class Question {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	
-	@Size(min=2,message="answer should be gretaer the 2 characters")
+
+	@Size(min = 2, message = "answer should be gretaer the 2 characters")
+	private String question;
+
+	@Size(min = 2, message = "answer should be gretaer the 2 characters")
 	private List<String> answers;
-	
+
 	private int vote;
 
 	private int u_id;
@@ -35,8 +38,8 @@ public class Question {
 
 	@Override
 	public String toString() {
-		return "Question [id=" + id + ", answers=" + answers + ", vote=" + vote + ", u_id=" + u_id + ", user=" + user
-				+ "]";
+		return "Question [id=" + id + ", question=" + question + ", answers=" + answers + ", vote=" + vote + ", u_id="
+				+ u_id + ", user=" + user + "]";
 	}
 
 }

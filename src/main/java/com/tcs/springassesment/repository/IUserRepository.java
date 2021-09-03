@@ -7,6 +7,4 @@ import com.tcs.springassesment.entity.User;
 
 public interface IUserRepository extends CrudRepository<User, Integer> {
 
-	
-
 }

@@ -15,6 +15,4 @@ public interface IUserService {
 
 	User updateUser(Integer id, User user);
 
-	
-
 }
